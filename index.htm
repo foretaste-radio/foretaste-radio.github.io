@@ -1,0 +1,2739 @@
+<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+saved from url=(0045)./lists/index.htm
+<HTML><HEAD><TITLE>( ( ( - - - SUBBORG PLAYLIST @ TANET- - - ) ) )</TITLE>
+<META http-equiv=content-type
+content=text/html;><CSACTIONS><CSACTION class="Open Window"
+val10="false" val9="false" val8="false" val7="false" val6="false" val5="false"
+val4="false" val3="512" val2="779" val1 val0="../../sonar/index.htm"
+type="ONEVENT" name="B6BA2C540"><CSACTION class="Set Status"
+val0="subborg.sonar -- the new radio show" type="ONEVENT"
+name="B6BA2C541"><CSACTION class="Set Status" val0="go to SUBBORG.COM main menu"
+type="ONEVENT" name="B6BC56110"><CSACTION class="Set Status" val0 type="ONEVENT"
+name="B6BC56911"></CSACTIONS><CSSCRIPTDICT>
+<SCRIPT>
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent;
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+CSStopExecution = false;
+
+function CSAction(array) {
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) {
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false;
+		var actArray = fct[array[i]];
+		if(actArray == null) return false;
+
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+function CSOpenWindow(action) {
+	var wf = "";
+	wf = wf + "width=" + action[3];
+	wf = wf + ",height=" + action[4];
+	wf = wf + ",resizable=" + (action[5] ? "yes" : "no");
+	wf = wf + ",scrollbars=" + (action[6] ? "yes" : "no");
+	wf = wf + ",menubar=" + (action[7] ? "yes" : "no");
+	wf = wf + ",toolbar=" + (action[8] ? "yes" : "no");
+	wf = wf + ",directories=" + (action[9] ? "yes" : "no");
+	wf = wf + ",location=" + (action[10] ? "yes" : "no");
+	wf = wf + ",status=" + (action[11] ? "yes" : "no");
+	window.open(action[1],action[2],wf);
+}function CSSetStatus(action) { self.status = action[1]; }
+</SCRIPT>
+</CSSCRIPTDICT><CSACTIONDICT>
+<SCRIPT>
+CSAct[/*CMP*/ 'B6BA2C540'] = new Array(CSOpenWindow,/*URL*/ '../../sonar/index.htm','',779,512,false,false,false,false,false,false,false);
+CSAct[/*CMP*/ 'B6BA2C541'] = new Array(CSSetStatus,'subborg.sonar -- the new radio show');
+CSAct[/*CMP*/ 'B6BC56110'] = new Array(CSSetStatus,'go to SUBBORG.COM main menu');
+CSAct[/*CMP*/ 'B6BC56911'] = new Array(CSSetStatus,'');
+
+</SCRIPT>
+</CSACTIONDICT>
+<META content="Microsoft FrontPage 4.0" name=GENERATOR></HEAD> -->
+
+<BODY text=#cccccc vLink=#9999ff aLink=#ccccff link=#bbbbff bgColor=#000000>
+  <CENTER>
+    <font size="2"><BR>
+    </font>
+    <TABLE cellSpacing=2 cellPadding=0 width=452 border=0>
+      <TBODY>
+        <TR>
+          <TD width=340>
+            <table cellspacing=2 cellpadding=0 width=300 border=0>
+              <tbody>
+                <tr>
+                  <td width=200>
+                    <div align="center">
+                      <font color="#BBBBFF" size="2">前味音樂網 </font>
+                      <font size="2">
+                        @<font color="#FFCC33"> TANET</font>
+                      </font>
+                    </div>
+                    <p align="center">
+                      <font size="2">
+                        <blink>更 新：</blink>
+                      </font>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td width=200>
+                    <center>
+                      <p>
+                        <font size="2">曲目單在電台週五首播後才貼出<br>
+                          <br>
+                          <br>
+                          <br>
+                          <a href="http://www.sinologic.com/newmusic/sub/board.html">潛味留言板</a>
+                        </font>
+                      </p>
+                      <p>
+                        <font size="2"><a href="sonar/sonar.htm">潛味聲納</a></font>
+                      </p>
+                      <p>&nbsp;</p>
+                      <p>
+                        <font size="2">Sub 125 正常運作</font>
+                      </p>
+                    </center>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </TD>
+          <TD width="106">
+            <font size="2"><a href="http://www.subborg.com"><img border="0" src="impact.gif" width="340"
+                  height="289"></a></font>
+          </TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <P>
+      <font size="2"><BR>
+      </font>
+    </P>
+    <p>
+      <font size="2">操作法：<br>
+      </font>
+    </p>
+    <p>
+      <font size="2">一：點按各集主題查看詳細曲目及解說</font>
+    </p>
+    <p>
+      <font size="2">二：點按<font color=#9999ff>上下</font>集可下載 <a href="http://www.real.com/">RealAudio</a>
+        檔收聽</font>
+    </p>
+    <p>
+      <font size="2">三：作品年代以創作或錄音年代為準<br>
+      </font>
+    </p>
+    <p>
+      <font size="2">四：日本人名採國際慣用之反拼法<br>
+        即名在前姓在後而姓氏大寫</font>
+    </p>
+    <p>
+      <font size="2">五：感想建議或點播歡迎<a href="mailto:sub@subborg.com">來信</a><br>
+      </font>
+    </p>
+    <p>
+      <font size="2"><br>
+        <a href="http://www.subborg.com/">回 主 頁</a><br>
+      </font>
+    </p>
+    <blockquote>
+      <p>
+        <font size="2">.<br>
+          .<br>
+          .</font>
+      </p>
+    </blockquote>
+    <BLOCKQUOTE>
+      <blockquote>
+        <p> </p>
+      </blockquote>
+      <p>
+        <font size="2">現</font>
+      </p>
+      <p align="center">
+        <font size="2">在</font>
+      </p>
+      <p align="center">
+        <font size="2">.<br>
+          .<br>
+          .</font>
+      </p>
+      <caption>
+        <center>
+          <font color="yellow" size="2">2003</font>
+          <font size="2"> 年節目表<br>
+            <br>
+          </font>
+        </center>
+      </caption>
+      <table style="margin-left:200px;" cellspacing=0 cellpadding=7 width=595 border=0>
+
+        <tbody>
+          <tr>
+            <td width=42>
+              <div align="center">
+                <font size="2">集 數 </font>
+              </div>
+            </td>
+            <td width=84>
+              <div align=left>
+                <font size="2">首播日期</font>
+              </div>
+            </td>
+            <td width=364>
+              <div align=left>
+                <font size="2">主 題</font>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td valign=top width=42>
+              <div align="center">
+                <font size="2">118</font>
+              </div>
+            </td>
+            <td valign=top width=84>
+              <font size="2">2003-1-19</font>
+            </td>
+            <td valign=top width=364>
+              <font size="2">新年快樂：聽眾點播</font>
+            </td>
+          </tr>
+          <tr>
+            <td valign=top align=middle width=42>
+              <div align="center">
+                <font size="2">119</font>
+              </div>
+            </td>
+            <td valign=top width=84>
+              <font size="2">2003-1-26</font>
+            </td>
+            <td valign=top width=364>
+              <font size="2">快到新年：格式測試</font>
+            </td>
+          </tr>
+          <tr>
+            <td valign=top align=middle>
+              <div align="center">
+                <font size="2">120</font>
+              </div>
+            </td>
+            <td valign=top>
+              <font size="2">2003-2-2</font>
+            </td>
+            <td valign=top>
+              <font size="2">快樂新年：有獎問答</font>
+            </td>
+          </tr>
+          <TR>
+            <TD vAlign=top align=middle>
+              <div align="center"></div>
+            </TD>
+            <TD vAlign=top>
+              <font size="2">2003-2-9</font>
+            </TD>
+            <TD vAlign=top>
+              <font size="2">(NO SHOW - 快樂過頭)</font>
+            </TD>
+          </TR>
+          <tr>
+            <td valign=top align=middle>
+              <div align="center">
+                <font size="2">121</font>
+              </div>
+            </td>
+            <td valign=top>
+              <font size="2">2003-2-16</font>
+            </td>
+            <td valign=top>
+              <font size="2">有情天地：情歌大會串<br>
+                <br>
+                MP3 pro 格式測試（請勿用舊式 MP3 播放器播放）
+              </font>
+            </td>
+          </tr>
+          <tr>
+            <td valign=top align=middle width=42 height="30">
+              <font size=2>122</font>
+            </td>
+            <td valign=top width=84 height="30">
+              <font size=2>2003-3-9</font>
+            </td>
+            <td valign=top width=364 height="30">
+              <font size=2>聽眾點播</font>
+            </td>
+          </tr>
+          <tr>
+            <td valign=top align=middle width=42 bgcolor=#333333>
+              <font size=2>123</font>
+            </td>
+            <td valign=top width=84 bgcolor=#333333>
+              <font size=2>2003-3-30</font>
+            </td>
+            <td valign=top width=364 bgcolor=#333333>
+              <font size=2>正常運作</font>
+            </td>
+          </tr>
+          <tr>
+            <td valign=top align=middle width=42>
+              <font size=2>124</font>
+            </td>
+            <td valign=top width=84>
+              <font size=2>2003-4-6</font>
+            </td>
+            <td valign=top width=364>
+              <font size=2>爵士黑膠 (ken BURNS: 25-26/100)</font>
+            </td>
+          </tr>
+          <tr>
+            <td valign=top align=middle width=42>
+              <font size=2>125</font>
+            </td>
+            <td valign=top width=84>
+              <font size=2>2003-4-27</font>
+            </td>
+            <td valign=top width=364>
+              <font size=2>照常作樂</font>
+            </td>
+          </tr>
+          <tr>
+            <td valign=top align=middle width=42 bgcolor=#333333>
+              <font size=2>126</font>
+            </td>
+            <td valign=top width=84 bgcolor=#333333>
+              <font size=2>2003-5-4</font>
+            </td>
+            <td valign=top width=364 bgcolor=#333333>
+              <font size=2>苦中作樂</font>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div align="left"></div>
+      <P>
+        <font size="2"><BR>
+          <BR>
+        </font>
+      </P>
+      <p align="center">
+        <font size="2"><br>
+          .<br>
+          .<br>
+          . </font>
+      </p>
+      <p>
+        <font size="2">過</font>
+      </p>
+      <p>
+        <font size="2">去</font>
+      </p>
+      <p>
+        <font size="2">.<br>
+          .<br>
+          .</font>
+      </p>
+      <P>
+        <font size="2"><BR>
+          <br>
+        </font>
+      </P>
+    </BLOCKQUOTE>
+    <p align="center">
+      <caption>
+        <center>
+          <font color="#ff0066" size="2">2002</font>
+          <font size="2"> 年節目表<br>
+            <br>
+          </font>
+        </center>
+      </caption>
+    <div align="center">
+      <table style="margin-left:200px;" cellspacing=0 cellpadding=7 width=634 border=0 bgcolor="#000000">
+        <tr>
+          <td width=43 <center>
+            <font size="2"> 集 數 </font>
+  </center>
+  </td>
+  <td width=84>
+    <div align=left>
+      <font size="2">首播日期</font>
+    </div>
+  </td>
+  <td width=408>
+    <div align=left>
+      <font size="2">主 題</font>
+    </div>
+  </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 83 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-1-6</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2">... 誰說換一個離合器就要八百塊？
+        ..<a href="lists/83.htm">.</a></font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 84 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-1-13</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2">前線聲音</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 85 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-1-20</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2">... 我當然知道不能左轉，要罰就罰吧
+        ...</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43></td>
+    <td valign=top width=84>
+      <font size="2">2002-1-27</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2">... 休假 ...</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43></td>
+    <td valign=top width=84>
+      <font size="2">2002-2-3</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2">... 休假 ...</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43></td>
+    <td valign=top width=84>
+      <font size="2">2002-2-10</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2">... 休假 ...</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43></td>
+    <td valign=top width=84>
+      <font size="2">2002-2-17</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2">... 休假 ...</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 86 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-2-24</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2">... 就是沒有主題也不叫無題
+        ..<a href="lists%5C86.htm">.</a></font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 87 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-3-3</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2">... 無目的浮遊 ..<a href="lists%5C87.htm">.</a></font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 88 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-3-10</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2"><a href="lists/88.htm">...
+          我劍還在燒 ...</a><a href="lists%5C88.htm"> (Ken BURNS: 23-24/100)</a><a href="lists/88.htm"><br>
+          JAZZ VINYL: Jim Pepper 絕版 witchi-tai-to 原典及其他玩具</a></font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 89 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-3-17</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#CCCCCC" size="2"><a href="lists/89.htm">...
+          劍它還在燒 ... (Ken BURNS: 23-24/100) 有獎猜謎</a></font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 90 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-3-24</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">... 誰說狗可以走音而人就不能走音..<a href="lists%5C90.htm">.</a></font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 91 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-3-31</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2"><a href="lists/91.html">日本前衛音樂原典系列</a>：之一<br>
+        <br>
+        本系列將長期／持續播放世人最不熟悉的現代音樂經典，含蓋作曲家：<br>
+        一柳 慧、黛 敏郎、諸井 誠、高橋悠治、篠原 真、武滿 徹、水野修孝、廣瀨量平、平 義久、丹波 明、湯淺讓二、入野義朗、新實德英、三枝成彰、石井真木、山下
+        勉、刀根康尚 ...
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 92 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-4-7</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2"><a href="lists/92.html">... 有獎猜謎又來了 ...</a></font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43></td>
+    <td valign=top width=84>
+      <font size="2">2002-4-14</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">... 請假 ...</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 93 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-4-21</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2"><a href="lists/93.html">... 劍他還在燒 ... (ken BURNS: 25-26/100)</a><br>
+        兩張重要現場</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 94 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-4-28</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2"><a href="lists/94.html">電子原音音樂系列</a>：新新舊舊</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 95 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-5-5</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2"><a href="lists/95.html">黑膠病院</a>：能劇「邯鄲」全本，俄羅斯教堂晚禱音樂，胡志明，及其他</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43></td>
+    <td valign=top width=84>
+      <font size="2">2002-5-12</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">（系統維修）</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 96 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-5-19</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">忽新忽舊</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 97 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-5-26</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">世界音樂</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43></td>
+    <td valign=top width=84>
+      <font size="2">2002-6-2</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">(NO SHOW)</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 98 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-6-9</font>
+    </td>
+    <td valign=top width=408>
+      <font color="#ff9933" size="2"><a href="lists/98.html">兩週年紀念特別節目</a></font>
+      <font size="2"><a href="http://www.juxiang.com/radio/lists/98.html">：派對黑膠 PARTY VINYL</a></font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 99 </font>
+      </center>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-6-16</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">前線聲音：yuka honda, merzbow, tetsuo
+        furudate, zbigniew karkowski, daniel menche, laurent grappe...</font>
+    </td>
+  </tr>
+  <tr>
+    <td width="43" valign="top"></td>
+    <td width="84" valign="top">
+      <font size="2">2002-6-23</font>
+    </td>
+    <td width="408" valign="top">
+      <font size="2">(NO SHOW)</font>
+    </td>
+  </tr>
+  <tr>
+    <td width="43" valign="top"></td>
+    <td width="84" valign="top">
+      <font size="2">2002-6-30</font>
+    </td>
+    <td width="408" valign="top">
+      <font size="2">(NO SHOW)</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top width=43>
+      <center>
+        <font size="2"> 100 </font>
+      </center>
+    </td>
+    <td width="84" valign="top">
+      <font size="2">2002-7-7</font>
+    </td>
+    <td width="408" valign="top">
+      <font size="2">一百集特別節目：前衛佛教音樂</font>
+    </td>
+  </tr>
+  <tr>
+    <td width="43" valign="top">
+      <center>
+        <font size="2"> 101 </font>
+      </center>
+    </td>
+    <td width="84" valign="top">
+      <font size="2">2002-7-14</font>
+    </td>
+    <td width="408" valign="top">
+      <font size="2">非常世界</font>
+    </td>
+  </tr>
+  <tr>
+    <td width="43" valign="top">
+      <center>
+        <font size="2"> 102 </font>
+      </center>
+    </td>
+    <td width="84" valign="top">
+      <font size="2">2002-7-21</font>
+    </td>
+    <td width="408" valign="top">
+      <font size="2">非常男女</font>
+    </td>
+  </tr>
+  <tr>
+    <td width="43" valign="top">
+      <center>
+        <font size="2"> 103 </font>
+      </center>
+    </td>
+    <td width="84" valign="top">
+      <font size="2">2002-7-28</font>
+    </td>
+    <td width="408" valign="top">
+      <font size="2">非常東方：東方主義非常系列（二）</font>
+    </td>
+  </tr>
+  <tr>
+    <td width="43" valign="top" align="center">
+      <center>
+        <font size="2"> 104 </font>
+      </center>
+    </td>
+    <td width="84" valign="top">
+      <font size="2">2002-8-4</font>
+    </td>
+    <td width="408" valign="top">
+      <font size="2">非常幽暗<br>
+        SUBBORG ULTRA DARK MIDNITE MIX</font>
+    </td>
+  </tr>
+  <tr>
+    <td width="51" align="center" valign="top">
+      <font size="2">NO SHOW</font>
+    </td>
+    <td width="84" valign="top">
+      <font size="2">2002-8-11</font>
+    </td>
+    <td width="408" valign="top">
+      <font size="2">（非常忙碌：暫停一次）</font>
+    </td>
+  </tr>
+  <tr>
+    <td width="43" align="center" valign="top">
+      <font size="2">105</font>
+    </td>
+    <td width="84" valign="top">
+      <font size="2">2002-8-18</font>
+    </td>
+    <td width="408" valign="top">
+      <font size="2">非常複雜<br>
+        SUBBORG RANDOM(x) HOUSE BLEND</font>
+    </td>
+  </tr>
+  <TR>
+    <TD align=middle vAlign=top>
+      <div align="center">
+        <font size="2">106</font>
+      </div>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">2002-8-25</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">非常隨興<BR>
+        SUBBORG REALTIME BLEND</font>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=middle vAlign=top>
+      <div align="center">
+        <font size="2">107</font>
+      </div>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">2002-9-1</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">非常印度<BR>
+        融合、經典、絕罕、玄秘、爆笑、卡帶、黑膠<BR>
+        SUBBORG INDIAN SUBCONTINENTAL MIX</font>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=middle vAlign=top>
+      <div align="center">
+        <font size="2">108</font>
+      </div>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">2002-9-8</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">非常生鮮<BR>
+        THE CUTTING EDGE - NEW RELEASES</font>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=middle vAlign=top>
+      <div align="center">
+        <font size="2">109</font>
+      </div>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">2002-9-15</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">非常無線：<A href="http://alien.mur.at/radiotopia/">「無線電烏托邦」RADIOTOPIA</A><BR>
+        奧地利 ORF Kunstradio 電台及Ars Electronica 電子藝術節主辦 前味電台現場混音</font>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=middle vAlign=top></TD>
+    <TD vAlign=top>
+      <font size="2">2002-9-22</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">(NO SHOW)</font>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=middle vAlign=top>
+      <div align="center">
+        <font size="2">110</font>
+      </div>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">2002-9-29</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">非常戰鬥</font>
+    </TD>
+  </TR>
+  <tr>
+    <td valign=top align=middle width=43>
+      <div align="center">
+        <font size="2">111</font>
+      </div>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-10-6</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">平常巡弋</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top align=middle width=51></td>
+    <td valign=top width=84>
+      <font size="2">2002-10-13</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">(NO SHOW)</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top align=middle width=51></td>
+    <td valign=top width=84>
+      <font size="2">2002-10-20</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">(NO SHOW</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top align=middle width=43>
+      <div align="center">
+        <font size="2">112</font>
+      </div>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-10-27</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">異常洪水</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top align=middle width=43>
+      <div align="center">
+        <font size="2">113</font>
+      </div>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-11-3</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">正常光怪</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top align=middle width=43>
+      <div align="center">
+        <font size="2">114</font>
+      </div>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-11-10</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">正常陸離</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top align=middle width=43>
+      <div align="center">
+        <font size="2">115</font>
+      </div>
+    </td>
+    <td valign=top width=84>
+      <font size="2">2002-11-17</font>
+    </td>
+    <td valign=top width=408>
+      <font size="2">正常黑膠</font>
+    </td>
+  </tr>
+  <tr>
+    <td valign=top align=middle>
+      <div align="center">
+        <font size="2">116</font>
+      </div>
+    </td>
+    <td valign=top>
+      <font size="2">2002-11-24</font>
+    </td>
+    <td valign=top>
+      <font size="2">正常巡洋</font>
+    </td>
+  </tr>
+  <TR>
+    <TD align=middle vAlign=top></TD>
+    <TD vAlign=top>
+      <font size="2">2002-12-1</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">(NO SHOW)</font>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=middle vAlign=top></TD>
+    <TD vAlign=top>
+      <font size="2">2002-12-8</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">(NO SHOW)</font>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=middle vAlign=top></TD>
+    <TD vAlign=top>
+      <font size="2">2002-12-15</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">(NO SHOW)</font>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=middle bgColor=#333333 vAlign=top>
+      <font size="2">117</font>
+    </TD>
+    <TD bgColor=#333333 vAlign=top>
+      <font size="2">2002-12-22</font>
+    </TD>
+    <TD bgColor=#333333 vAlign=top>
+      <font size="2">異常聖誕</font>
+    </TD>
+  </TR>
+  <TR>
+    <TD align=middle vAlign=top>
+      <font size="2">118</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">2002-12-29</font>
+    </TD>
+    <TD vAlign=top>
+      <font size="2">非常新年</font>
+    </TD>
+  </TR>
+
+  <tbody> </tbody>
+  </table>
+  </div>
+  <P align="center">
+    <font size="2"><BR>
+      <br>
+    </font>
+  </P>
+  <P align="center">&nbsp; </P>
+  <P align="center">
+    <font size="2">　 </font>
+    </CENTER>
+    <CAPTION>
+      <CENTER>
+        <font color="#ccff66" size="2">2001</font>
+        <font size="2"> 年節目表<BR>
+          <BR>
+        </font>
+      </CENTER>
+    </CAPTION>
+  <div align="center">
+    <TABLE style="margin-left:200px;" cellSpacing=0 cellPadding=7 width=631 border=0>
+      <CENTER>
+        <TR>
+          <TD width=100>
+            <div align="center">
+              <font size="2">集 數 </font>
+            </div>
+          </TD>
+          <TD width=180>
+            <DIV align=left>
+              <font size="2">首播日期</font>
+            </DIV>
+          </TD>
+          <TD width=364>
+            <div align="left">
+              <font size="2">主 題</font>
+            </div>
+          </TD>
+        </TR>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 31 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-1-5</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ff66ff" size="2">VINYL PARTY <a href="lists/31.htm">!</a></font>
+            <font size="2">&nbsp;
+              <font color=#99ff00>新世紀老唱片派對</font><br>
+              33/45/78 RPM - 7/10/12 inch - 彩膠／薄膜／乙烯／蟲膠
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 32 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-1-12</font>
+          </td>
+          <td valign=top width=2000>
+            <font size="2"><a href="lists/32.htm">
+                <font color=#9370db>電吉他</font>專集
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td width=41>
+            <center>
+              <font size="2"> 33 </font>
+            </center>
+          </td>
+          <td width=68>
+            <font size="2">2001-1-19</font>
+          </td>
+          <td width=400>
+            <font size="2"><a href="lists/33.htm">
+                <font color=#fa8072>爵士黑膠</font> LP
+              </a>（閑話不說， 全部 vinyl jazz）</font>
+          </td>
+        </tr>
+        <tr>
+          <td width=41>
+            <center>
+              <font size="2"> 34 </font>
+            </center>
+          </td>
+          <td width=68>
+            <font size="2">2001-1-26</font>
+          </td>
+          <td width=400>
+            <font size="2"><a href="lists/34.htm">
+                <font color=#ffff66>PURE VOICE</font> 春節特別節目
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 35 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-2-2</font>
+          </td>
+          <td width=400>
+            <font size="2"><a href="lists/35.htm">極度寒冷：<font color=red>蘇俄新音樂
+                </font>特集</a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 36 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-2-9</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/36.htm">Iannis Xenakis 紀念專集 (R.I.P.)</a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 37 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-2-16</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/37.htm">
+                <font color=#ccccff>再度寒冷：</font>
+                <font color=#ff66ff>俄羅斯歌曲
+                  NON-STOP</font>
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 38 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-2-23</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/38.htm">
+                <font color=#ccff66>前線聲音</font>（最新出版）
+              </a>&nbsp; </font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 39 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-3-2</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/39.htm">
+                <font color=#ffcc00>Ken BURNS</font> ! <font color=#ffcc00>建在燒</font>
+              </a>：<br>
+              抗議 Ken Burns 屠殺爵士樂精神·<font color=#ffff33>一百小時</font>爵士黑膠特別系列 (1-2/100)</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 40 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-3-9</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/40.htm">
+                <font color=#9999ff>現代爵士黑膠 LP：全球</font>
+                <font color=#ffff99>小喇叭手特集</font>
+              </a>
+              <font color=#9999ff>&nbsp;
+              </font>(<font color=#ffcc00>Ken BURNS: 3-4/100</font>)
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 41 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-3-16</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/41.htm">
+                <font color=#ee82ee>AMBIENTOLOGY</font> - 幽玄樂音藏經洞
+              </a><br>
+              此系列今起全面回顧近二十年最原創新樂種之一</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 42 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-3-23</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/42.htm">
+                <font color=#ccff66>現代爵士樂迷資格檢驗</font>
+              </a> (<font color=#ffcc00>Ken
+                BURNS: 5-6/100</font>)<br>
+              您是現代爵士樂迷嗎？敢來玩兩小時的 JAZZ LP 矇眼測驗？</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 43 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-3-30</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/43.htm">
+                <font color=#ff0033>黑膠病院 VINYL ASYLUM</font> 系列：<font color=yellow>PROGRESSIVE
+                  ROCK LPs 系列之一</font>
+              </a><br>
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 44 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-4-6</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/44.htm">
+                <font color=#9999ff>日本前衛爵士黑膠</font>
+              </a> (<font color=#ffcc00>Ken
+                BURNS: 7-8/100</font>)</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 45 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-4-13</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/45.htm">
+                <font color=#ffcc00>北印度融合音樂</font>
+              </a>系列之一 north indian
+              fusion (1)</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 46 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-4-20</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2">日本現在作曲家系列（一）：<a href="lists/46.htm">
+                <font color=#99ff66>吉松 隆</font>
+              </a> takashi YOSHIMATSU</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 47 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-4-27</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/47.htm">
+                <font color=#ffcc33>MAHAVISHNU john mclaughlin 絕版唱片特集</font>
+              </a>
+              (<font color=#ffcc00>Ken BURNS: 9-10/100</font>)<br>
+              1972 年 Cleveland 超辣現場 bootleg； M.O. 唯一絕版專輯「Mahavishnu」 (1984)</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 48 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-5-4</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ffff66" size="2">台北 FM 105.5 播出時間今起調整為：晚十二點到兩點</font>
+            <p>
+              <font size="2"><a href="lists/48.htm" target=_blank>
+                  <font color=#ccff33>ECM 絕版唱片系列（之二）</font>
+                </a></font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 49 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-5-11</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/49.htm">
+                <font color=#ccffcc>爵士黑膠：ken BURNS in VINYL ASYLUM</font>
+              </a>
+              <font color=#9999ff>&nbsp;
+              </font>(<font color=#ffcc00>Ken BURNS: 11-12/100</font>)<br>
+              alice coltrane, karin krog, archie shepp, jamaaladeen tacuma, vienna
+              art orchestra, peter bro:tzmann, anthony davis, joseph jarman, george
+              adams, butch morris...
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 50 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-5-18</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ff66ff" size="2">音樂夢遊</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 51 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-5-25</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ffff66" size="2">佛教音樂</font>
+            <font size="2">：紀念阿富汗巴米揚<font color=#ffcc66>大日如來</font>佛像<br>
+              中、日、韓傳統佛教音樂及日本作曲家山下 勉「空海大師」專輯</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 52 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-6-1</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/52.htm">
+                <font color=#ffff99>北印度大師現場系列：Nikhil Banerjee LIVE CONCERTS
+                  (1)</font>
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 53 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-6-8</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ccff33" size="2">開播週年</font>
+            <font color="#ff3333" size="2">特別節目：</font>
+            <font size="2"><a href="lists/53.htm">
+                <font color=#ffcc00>北印度古典人聲音樂絕版唱片選</font>
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 54 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-6-15</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/54.htm">
+                <font color=#ffccff>前線聲音：最新出版</font>
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 55 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-6-22</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ffff99" size="2">新出版電子／電腦音樂：<br>
+              biosphere, goem, noto, 竹村延和, 池田亮司，ilpo va:isa:nen ...</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 56 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-6-29</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/56.htm">
+                <font color=#ff6600>前衛搖滾黑膠系列（二）PROGRESSIVE ROCK LPs
+                  (2)</font>
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 57 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-7-6</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/57.htm">
+                <font color=#ccff99>plunderphonics 掠奪聲響：john oswald
+                  最新違法發行回顧雙碟 69/96</font>
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 58 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-7-13</font>
+          </td>
+          <td valign=top width=400>
+            <p>
+              <font size="2"><a href="lists/58.htm">
+                  <font color="#CCFF99">清涼自在</font>
+                </a></font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 59 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-7-20</font>
+          </td>
+          <td valign=top width=400>
+            <p>
+              <font color="#99CCFF" size="2"><a href="lists/59.htm">
+                  <font color="#99FF66">夏日大膠
+                    SUMMER VINYL?</font>
+                </a></font>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 60 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-7-27</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/60.htm">
+                <font color=#ffccff>新音樂與東方主義（一）</font>
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 61 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-8-3</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/61.htm">
+                <font color=#ffcc33>正統
+                  ECM 經典黑膠系列（一）：THE REAL ECM CLASSICS, FROM ECM 1001</font>
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 62 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-8-10</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/62.htm">音樂自由</a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 63 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-8-17</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/63.htm">
+                <font color=#ff0066>爵士黑膠
+                  VINYL JAZZ</font>
+              </a> (<font color=#ffcc00>Ken BURNS: 13-14/100</font>)
+              :<br>
+              featuring 秋吉敏子四重奏超級絕盤 "The Personal Aspect in Jazz"</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 64 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-8-24</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/64.htm">自由音樂</a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 65 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-8-31</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ff0066" size="2">爵士黑膠 VINYL JAZZ</font>
+            <font size="2">
+              (<font color=#ffcc00>Ken BURNS: 15-16/100</font>)</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=41>
+            <center>
+              <font size="2"> 66 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-9-7</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ccff99" size="2">隨機隨緣</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=38>
+            <center>
+              <font size="2"> 67 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-9-14</font>
+          </td>
+          <td valign=top width=400>
+            <font color="white" size="2">止樂</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=38>
+            <center>
+              <font size="2"> 68 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-9-21</font>
+          </td>
+          <td valign=top width=400>
+            <font color="white" size="2">止樂</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=38>
+            <center>
+              <font size="2"> 69 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-9-28</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ccff33" size="2">2001: An Earth
+              Odyssey</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=38>
+            <center>
+              <font size="2"> 70 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-10-7</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/70.htm">爵士黑膠系列
+                VINYL JAZZ<font color=#cc99ff> </font></a>(<font color=#ffcc00>Ken BURNS: 17-18/100</font>)<br>
+              urszula dudiak, vladimir chekasin, don cherry, jonas hellborg, charlie
+              mariano...</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=37>
+            <center>
+              <font size="2"> 71 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-10-14</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/71.htm" target=_blank>
+                <font color=#ff9933>前線聲音：新近出版</font>
+              </a>
+              <font color=#ff9933> autechre, survival
+                research laboratories<br>
+                artemiy artemiev, tetsuo furudate, zbigniew karkowski ...</font>
+            </font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=37>
+            <center>
+              <font size="2"> 72 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-10-21</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/72.htm">
+                <font color=red>即興廣播</font>
+              </a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=37>
+            <center>
+              <font size="2"> 73 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-10-28</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2">爵士黑膠 <font color=#ff3333>VINYL
+                JAZZ</font>
+            </font>
+            <font color="#cc99ff" size="2">&nbsp; </font>
+            <font size="2">(<font color=#ffcc00>Ken
+                BURNS: 19-20/100</font>)<br>
+              jim pepper, oliver lake, marion brown, john kaizan neptune, barbara
+              thompson...</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=37>
+            <center>
+              <font size="2"> 74 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-11-4</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#99ff33" size="2">前衛經典掃描系列（二）SURVEY
+              OF AVANT-GARDE CLASSICS</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=37>
+            <center>
+              <font size="2"> 75 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-11-11</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/75.htm">黑膠病院</a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=37>
+            <center>
+              <font size="2"> 76 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-11-18</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/76.htm">聰明舞曲</a></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=37>
+            <center>
+              <font size="2"> 77 </font>
+            </center>
+          </td>
+          <td valign=top width=68>
+            <font size="2">2001-11-25</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2">ECM 經典系列（黑膠二）</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=36>
+            <center>
+              <font size="2"> 78 </font>
+            </center>
+          </td>
+          <td valign=top width=69>
+            <font size="2">2001-12-2</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ccff00" size="2">... oops... 剛點完醬肘花才想起您二位是回民
+              ... :-)</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=36>
+            <center>
+              <font size="2"> 79 </font>
+            </center>
+          </td>
+          <td valign=top width=69>
+            <font size="2">2001-12-9</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#ffcc00" size="2">... 我點的不是鴕鳥肉絲煎麵，是韭皇肉絲煎麵
+              ...</font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=36>
+            <center>
+              <font size="2"> 80 </font>
+            </center>
+          </td>
+          <td valign=top width=69>
+            <font size="2">2001-12-16</font>
+          </td>
+          <td valign=top width=400>
+            <font color="#3399ff" size="2">... 霧之後才看到你的心比你手還冰冷
+              ...</font>
+          </td>
+        </tr>
+        <tr valign=center>
+          <td valign=center width=36>
+            <center>
+              <font size="2"> 81 </font>
+            </center>
+          </td>
+          <td valign=center width=69>
+            <font size="2">2001-12-23</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2"><a href="lists/81.htm">
+                <font color="#009900">聖誕特輯
+                  LUBEH </font>
+              </a><img height=49 src="lubecyrillic.gif" width=75 align=middle></font>
+          </td>
+        </tr>
+        <tr>
+          <td valign=top width=36>
+            <center>
+              <font size="2"> 82 </font>
+            </center>
+          </td>
+          <td valign=top width=69>
+            <font size="2">2001-12-30</font>
+          </td>
+          <td valign=top width=400>
+            <font size="2">年終特輯 <font color=#ff6699>強烈寒流：俄羅斯歌曲系列（四）</font>
+            </font>
+          </td>
+        </tr>
+      </center>
+    </TABLE>
+  </div>
+  <P align="center">
+    <font size="2"><BR>
+    </font>
+  </P>
+  <P align="center">
+    <CAPTION>
+      <CENTER>
+        <P>
+          <font size="2"><BR>
+            2000 年節目表<BR>
+            <BR>
+          </font>
+        </P>
+      </CENTER>
+    </CAPTION>
+  <div align="center">
+    <TABLE style="margin-left:200px;" cellSpacing=0 cellPadding=7 width=632 border=0>
+      <TBODY>
+        <TR>
+
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 集 數 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <DIV align=left>
+              <font size="2">首播日期</font>
+            </DIV>
+          </TD>
+          <TD width=416>
+            <DIV align=left>
+              <font size="2">主 題</font>
+            </DIV>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 1 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-6-5</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/1.htm">女聲（一）：女人的聲音</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 2 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-6-12</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/2.htm">無題平靜 deep listening</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 3 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-6-26</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/3.htm">ECM 絕版 LP 系列（之一）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 4 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-7-3</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/4.htm">前線聲音（新出版品）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 5 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-7-10</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/5.htm">兩小時特別節目</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 6 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-7-17</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/6.htm">LP 癖戀系列：爵士（一）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 7 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-7-24</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/7.htm">日本電幻經典系列：阪本龍一早期精選</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 8 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-7-31</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/8.htm">緊急下潛（水主題作品）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 9 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-8-3,4</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/9.htm">David Darling 罕見作品集</A>（改為兩小時長）</font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 10 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-8-10,11</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/10.htm">前衛經典系列（一）: John Cage
+                to John Oswald</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 11 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-8-17,18</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/11.htm">高能低脂爵士 Hi-Energy Jazz</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 12 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-8-24,25</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/12.htm">Miles Davis 兩張最火辣罕見現場
+                bootleg 專集</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 13 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-8-31,9-1</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/13.htm">Bill Laswell 的 ambient-dub-drum'n'bass-indo
+                經典</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 14 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-9-7,8</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/14.htm">LP 癖戀（二）：隨興所至 (luciano
+                berio 到 kraftwerk)</A>（增加網上收聽）</font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 15 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-9-14,15</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/15.htm">挪威電吉他家 Terje Rypdal：北歐系列（一）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 16 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-9-21,22</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/16.htm">挪威作曲家 Terje Rypdal：北歐系列（二）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 17 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-9-28,29</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/17.htm">Rune Grammofon 旗下的
+                biosphere/deathprod/supersilent：北歐系列（三）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 18 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-10-5,6</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/18.htm">極光乍現：北歐系列（四）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 19 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-10-12,13</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/19.htm">前線聲音：最新前衛出版</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 20 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-10-19,20</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/20.htm">搖滾黑膠 rock LPs</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 21 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-10-26,27</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/21.htm">男人的聲音 (一) </A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 22 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-11-2,3</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/22.htm">世界中國人前衛作曲家系列（一）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 23 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-11-9,10</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/23.htm">新前衛電子樂派：京都：竹村延和，池田亮司</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 24 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-11-16,17</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/24.htm">新前衛電子樂派：科隆 Marcus
+                Schmickler；維也納 mego ；柏林 noton 及其他聚落</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 25 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-11-23,24</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/25.htm">電子原音音樂系列（一）</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 26 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-11-30;12-1</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/26.htm">二十世紀音樂錯亂</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 27 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-12-7,8</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/27.htm">二十世紀音樂錯亂</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 28 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-12-14,15</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/28.htm">二十世紀音樂錯亂</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 29 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-12-21,22</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/29.htm">二十世紀音樂錯亂</A></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD width=42>
+            <CENTER>
+              <font size="2"> 30 </font>
+            </CENTER>
+          </TD>
+          <TD width=92>
+            <font size="2">2000-12-28,29</font>
+          </TD>
+          <TD width=416>
+            <font size="2"><A href="./lists/30.htm">二十世紀音樂錯亂</A></font>
+          </TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+  </div>
+  <P align="center">
+    <font size="2"><BR>
+    </font>
+  </P>
+  <div align="center">
+    <BLOCKQUOTE>
+      <BLOCKQUOTE>
+        <BLOCKQUOTE>&nbsp; </BLOCKQUOTE>
+      </BLOCKQUOTE>
+    </BLOCKQUOTE>
+  </div>
+  <BLOCKQUOTE>
+    <BLOCKQUOTE>
+      <BLOCKQUOTE>
+        <P align="center">
+          <font size="2"><A href="http://www.subborg.com/">回 主 頁</A><BR>
+            <BR>
+          </font>
+        </P>
+      </BLOCKQUOTE>
+    </BLOCKQUOTE>
+  </BLOCKQUOTE>
+  <P align="center">
+    <font color="white" size="2">.<BR>
+      .<BR>
+      .<BR>
+    </font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">未</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">來</font>
+  </P>
+  <P align="center">
+    <font size="2">.<BR>
+      .<BR>
+      .<BR>
+    </font>
+  </P>
+  <P align="center">
+    <font color="white" size="2"><BR>
+      未來專題及系列：<BR>
+    </font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">（無順序）<BR>
+      <BR>
+      <BR>
+      <BR>
+    </font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">重要／絕版唱片完整介紹系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">最新出版系列 recent releases</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">法國具象系列 french musique concrete</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Luc Ferrari 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Pierre Schaeffer 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Pierre Henry 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">法國 metamkine 三吋具象小碟系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">法國 sonoris 公司前衛系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Karlheinz Stockhausen 經典系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">學院派電子原音系列 electroacoustic/acousmatic</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">學院派電子原音大獎得主系列 prize-winning electroacoustics</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">加拿大電子原音系列 canadian electroacoustic</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">地下電子原音系列 experimental electroacoustic</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">都市音景系列 urban soundscapes<BR>
+      (amsterdam, berlin, karlsruhe, vancouver,<BR>
+      madrid, lisbon, tokyo, roma, paris...)</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">環境音景系列 environmental soundscapes</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">聲音藝術系列 sound art</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">francisco lopez 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">erik la casa 專集</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">john duncan 專集</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">artificial memory trace 專集</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">aube 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">廣播聲音藝術系列 radio art</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">不該聽的聲音系列 improper listening</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">地下實驗電子系列 experimental electronic</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">軟體音樂系列 software music (DSP &amp;
+      algorithmic)</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">科隆／法蘭克福／維也納新電子樂派系列<BR>
+      new cologne/frankfurt/vienna school</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">文字音樂／聲響詩系列 text-sound art/sound
+      poetry</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">劇場舞蹈音樂系列 theater/dance music</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">聲音表演藝術系列 performance sound art<BR>
+      (Survival Research Laboratories, Matt Hackertt<BR>
+      Scot Jenerik, Timothy North)</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">荒繆音樂 music of the absurd<BR>
+      (lester bowie, anthony braxton,<BR>
+      samuel beckett, john cage<BR>
+      michael mantler, mauricio kagel, henri chopin...)</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">低限電子系列 neo-minimal electronic</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">國王新衣無聲樂派系列 lowercasesound</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">爵士搖滾經典系列 jazz-rock classics</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">前衛即興系列 free improv</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Miles Davis bootleg 地下出版系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Anthony Braxton 經典 LP 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">遺忘的日本融合音樂系列<BR>
+      (山下勉, 喜多島修, 東祥高,<BR>
+      小久保隆，岡野弘幹, Yaskaz)</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">波蘭爵士樂系列 polish jazz<BR>
+      (michal urbaniak, urszula duziak<BR>
+      zbigniew namyslovski, zbigniew seifert)</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">日本原創爵士樂系列 japanese new jazz<BR>
+      （日野皓正，近藤等則，梅津和時，渡邊香津美<BR>
+      山下洋輔，本多俊之，矢野顯子，久米大作）</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">日野皓正 LP 系列 Terumasa Hino LP's</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">笛子音樂專集<BR>
+      (hubert laws, keith jarrett, dollar brand<BR>
+      heinz holliger, paul horn, charles lloyd<BR>
+      jan garbarek, ian anderson, charlie mariano<BR>
+      橫山勝也, kazu matsui, 赤尾三千子...)</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">學院派電腦音樂系列 computer music</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">電腦互動音樂系列 interactive computer music</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">日本暴音系列 japanoise</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">絕版 LP 唱片及卡帶系列 LP/cassette-only
+      releases</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">ECM 絕版系列<BR>
+      （未發行 CD 版之 LP --<BR>
+      arild andersen, eberhard weber, bobo stensen, lask,<BR>
+      sam rivers, art lande &amp; rubisa patrol, bennie maupin...） </font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">ECM 早期經典系列 early ECM classics</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">七十八轉老片系列 78's</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">前衛女作曲家系列 female composers<BR>
+      (carla subito, natasha barrett, claire laronde<BR>
+      cecile le prado, ellen fullman, maryanne amacher<BR>
+      sarah peebles, maggi payne, fiorella terenzi<BR>
+      francoise barriere, sarah hopkins, laetitia sonami<BR>
+      eliane radigue...)</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Kaija Saariaho 專集</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Annette vande Gorn 專集</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Hildergard Westerkamp 專集</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">日本前衛作曲家系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">一柳 慧系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">高橋悠治系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">山下 勉系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">三枝成章系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">武滿 徹系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">佐藤聰明系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">吉松 隆系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">三輪真弘系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">心靈音樂系列 hearts of space</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Robert Rich 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">北印度人聲系列 north indian vocalists</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Amir Khan 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Pandit Jasraj 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Bhimsen Joshi 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">北印度西塔琴系列 north inidan sitarists</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Nikhil Banerjee 現場系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Krishna Bhatt 現場系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Vilayat Khan 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">印度打擊樂系列 north indian percussionists</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Alla Rakha 專集</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Zakir Hussain 專集</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">北印度融合音樂系列 north indian fusion</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Salamat Ali Khan 家族系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">南印度融合音樂系列 south indian fusion</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">mahavishnu john mclaughlin 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">L. Subramaniam 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">L. Shankar 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">採樣音樂系列 sampling music</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">幽暗幽暗系列 dark &amp; darker</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">Jon Hassell 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">世界女歌手系列 female vocalists</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">現場實況盜錄系列 live bootleg recordings</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">前衛音樂家專訪系列 composer interviews<BR>
+      (預定：<BR>
+      James Newton, Jon Jang, Bran Pos [jake rodrigues]<BR>
+      terre thaemlitz, Amar Chaudhary, Silvia Matheus<BR>
+      Crawl Unit, 楊靜，陳潔冰，陳遠林<BR>
+      趙菁文，汪洪，吳巍, forrest fang<BR>
+      等等⋯)</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">世界老歌系列 world oldies</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">ambient 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">fax 公司 ambient 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">haruomi hosono 細野晴臣系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">biosphere 系列</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">tetsu inoue 專集</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">聰明舞曲系列 IDM</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">世界三０年代音樂系列 music from the 1930s</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">時光隧道系列 synchronicity</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">前衛經典系列 avant-garde classics</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">非搖滾系列 progressive non-rock</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">黑人靈魂音樂系列 soul-funk-gangstaRap</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">冷門民族音樂系列 non-popular ethno musics<BR>
+      （日本能劇現場，雅樂，佛教聲明，薩摩琵琶<BR>
+      韓國，泰國，高棉，中國程派京戲<BR>
+      佛教水路道場實況，等等）</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">無法歸類系列 the unclassifiables<BR>
+      <BR>
+    </font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">.<BR>
+      .<BR>
+      .<BR>
+    </font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">等</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">等</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">等</font>
+  </P>
+  <P align="center">
+    <font color="white" size="2">等</font>
+  </P>
+  <P align="center">
+    <font size="2">.<BR>
+      .<BR>
+      .<FONT color=white><BR>
+        <BR>
+        <BR>
+        <BR>
+      </FONT>
+    </font>
+  </P>
+  <P align="center">
+    <font size="2"><A href="http://www.subborg.com/">回 主 頁</A><BR>
+      <BR>
+      <BR>
+      <BR>
+      <BR>
+    </font>
+  </P>
+</BODY>
+
+</HTML>
